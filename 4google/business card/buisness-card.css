@@ -1,0 +1,92 @@
+body {
+    font-family: Roboto;
+    margin: 20px;
+    
+}
+
+
+.dot-bord{
+    border: dotted 2px black;
+}
+
+
+.card-c{
+    display: flex;
+    background-color:#F0E2A4;
+    color: #AB526B;
+    align-items: center;
+    width: 400px;
+    justify-content: space-around;
+    border-bottom: solid 4px #FE4365;
+     border-right: solid 2px #FE4365;
+    padding: 20px;
+    margin: 0 auto;
+    text-align:center;
+    border-radius: 4px 10px 10px 4px;
+    box-shadow: 10px 10px 10px 10px rgba(183, 59, 59, 0.2);
+
+}
+
+.card-c:hover{
+   
+}
+
+.profile-pic{
+    height: 150px;
+    width: 150px;
+   
+    
+
+}
+
+.image{
+   margin: 20px;
+   
+}
+
+.details{
+    text-align: inherit;
+    
+   
+}
+
+.details:hover{
+    animation: myAnimation 4s ease-out infinite;
+    
+}
+
+.self-details:link{
+    color: rgb(2, 173, 36);
+    text-decoration: solid;
+   
+   
+}
+
+.self-details:visited{
+    color: rgb(2, 173, 36);
+}
+
+.self-details:hover{
+    color: #3b0181;
+    cursor: pointer;
+    
+   
+}
+.self-details:active{
+    color: #FE4365;
+
+}
+.dummy1:link{
+    color: rgb(10, 10, 10);
+    /* text-decoration-style: wavy;
+    text-underline-offset: 4px; */
+    text-decoration-thickness: 2px;
+    border-bottom: 4px wavy blue;
+        
+}
+
+@keyframes myAnimation {
+    from {background-color: rgb(217, 255, 0);}
+    to {background-color: #81015f;}
+    
+}

@@ -1,0 +1,96 @@
+<h1></h1>biggest tag usually for heading
+<h2></h2>2nd biggest
+<h3></h3>and so on
+<p></p> paragraphs
+<img> iamge tag no need to close this tag, self closing tag
+    <img src=""> src is a attribute named source which specifies the location can be on local
+    system or can be burrowed from online url. can use other ttribute like width = "100%"
+<div> divider or container
+<a> anchor tag used to create links
+    src set?? renders different size of images on different types of screen
+<button></button>
+<input type="" placeholder=""> self closing tag, type attribute to define what kind of input tag one wants
+    example, 
+    text
+    password
+    date
+    time
+    color
+<link rel="stylesheet"  href="Stylesheet.css"> self closing tag, hypertext reference
+<a href="link">text that will be used to click on link</a>
+    target attribute can change if it opens in existing tabs or new tabs
+    example <a href="file location" target="_blank">text that will be used to press link </a>
+    anchor tegs can be nested inside of other tags
+inline in a text block??
+metadata??
+
+Lists uses 2 different tags 
+    one to wrap entire list 
+        <ol> 
+            <li></li> short for list items
+        </ol> short for ordered list
+        <ul> </ul> used for unordered list
+    other tag for each list item
+
+Deployment
+
+CSSS
+
+selector {
+             property: value;
+}
+example of properties
+color
+background-color
+margin
+font-weight
+font-size
+text-align
+display block inline inline block
+
+margin auto??
+collapsing margins
+
+centering elements with margins
+    display:block
+    must have a width
+    margin left/right= auto
+
+padding
+box model
+
+height for input field  (padding with line height)
+line height vs height for input field
+buttons are display inline block
+        misc text-align??
+box -shadow property
+
+
+
+
+
+
+
+relative path syntax
+
+add alt attribute
+alt="describing the image, fallback if image doesnt render properly"
+
+make image smaller
+
+utitlty class, applying a utility class
+
+
+css inheritance
+DRYer code(dont repeat yourself)
+
+article element
+
+coomand +D to select multiple same things
+
+web safe font - already on client
+
+margin top right bottom left
+
+
+use case text-decoration, text-underline-offset and  border-bottom

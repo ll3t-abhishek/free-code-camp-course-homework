@@ -1,0 +1,67 @@
+body {
+    color:rgb(71, 71, 71);
+    background: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 10px;
+    font-family:Roboto;
+       
+}
+
+.logo {
+    width: 300px;
+    height: 92px;
+    display: block;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+.logo-img {
+    
+
+}
+.search-input {
+    line-height: 24px;
+    width: 600px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+        
+}
+
+.buttons {
+    width:400px;
+    display: block;
+    margin: auto;
+    padding-top: 18px;
+    
+  
+}
+
+.n-button1, .n-button2 {
+    font-family:Roboto;
+    font-weight: 5300;
+    line-height: 34.40px;
+    border: 1px solid #f8f9fa;
+    border-radius: 8px;
+    padding-left:16px; 
+    padding-right: 16px;   
+    background-color: #f8f9fa;
+    color:rgb(71, 71, 71);
+    cursor:pointer;
+    margin-right: 2px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 2px;
+
+}
+
+.n-button1:hover, .n-button2:hover {
+    border-color:#dadce0;
+    box-shadow: 0 1px 1px #dadce0;
+   
+}
