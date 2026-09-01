@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
+        <script rel="script" src="index.js" defer></script>
+
+    </head>
+    <body>
+        <div class="score-grid">
+            <div class="team-text-h" id="team-text-h"><h1>HOME</h1></div>
+            <div class="team-text-g"><h1>GUEST</h1></div>
+            <div class="score-scr" id="team-score-h">0</div>
+            <div class="score-scr" id="team-score-g">0</div>
+            <div class="btn-pnl">
+                <button class="btn-pnl-btn" onclick="score_ha1()">+1</button>
+                <button class="btn-pnl-btn" onclick="score_ha2()">+2</button>
+                <button class="btn-pnl-btn" onclick="score_ha3()">+3</button>
+            </div>
+            <div class="btn-pnl">
+                <button class="btn-pnl-btn" onclick="score_ga1()">+1</button>
+                <button class="btn-pnl-btn" onclick="score_ga2()">+2</button>
+                <button class="btn-pnl-btn" onclick="score_ga3()">+3</button>
+            </div>
+            
+            <div class="fouls">
+                <button class="foul-btn-h" onclick="foulH()">FOUL</button>
+            </div>
+
+             <div class="fouls">
+                <button class="foul-btn-g" onclick="foulG()">FOUL</button>
+                </div>
+            
+            
+        
+        </div>
+        <div class="footer">
+                <button class="btn-ng" id="new-game" onclick="newGame()">NEW GAME</button>
+                <div>periods</div>
+                <div>timer</div>
+
+            </div>
+
+    </body>
+</html>

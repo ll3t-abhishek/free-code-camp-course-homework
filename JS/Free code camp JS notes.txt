@@ -1,0 +1,59 @@
+setting a variable 
+	let = variable_name
+
+console.log() to display somethign to the cosnole
+
+document.getElementById("count-el").innerText
+	document
+	getElemetById
+	
+javascript console has a lot of built in mathematical operations 
+thus can be used as a calculator
+
+onclick even listener
+
+onclick attribute in html
+
+let variable block scoped
+
+methods and functions
+ 
+ functionName(passAnArgument)
+ 
+object. //hooked to a an object// method ( is kind of functions)
+	check for difference betweeen functions and method
+ 
+ DOM - Document object model
+	aka how you use javaScript to medify a website
+	
+	Document- 
+
+concetnation
+
+escaping
+	escape character \ backslash
+	next character should not be seen as string delimiter
+	
+css - box sizing :border box
+
+
+simplifying  A = A +something to A += something
+
+html drops whitespaces at ends (trailing whitespaces) there's no pixel for a "space" to occupy right before the tag ends.
+textContent → reads the source → gives you "Previous entries : " (space included) ✅
+innerText → asks "what does this look like rendered?" → the browser says "that trailing space isn't visible" → gives you "Previous entries :" (space gone) ❌
+
+if you care about exact characters (including whitespace) as written in your HTML, use textContent. Use innerText only when you specifically want the "what a human would see" version — e.g. skipping over content hidden by display: none.
+
+on click - event handler
+	event listeners
+	
+SUPER SIMPLE DEV REV_35 MINS
+
+justify-content align-items &&&&&&77 justify-self  align-self
+
+align-content property 
+
+
+	
+

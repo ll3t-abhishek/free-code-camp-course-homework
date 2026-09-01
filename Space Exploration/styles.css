@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@font-face {
+    font-family: Corleone;
+    src: url("Corleone.ttf");
+}
+
+body {
+    color: white;
+    text-align: center;
+    font-family: Orbitron, sans-serif;
+    font-weight: 900;
+    color: #7777a0;
+    margin: 0 0;
+}
+
+#hero{
+    background-image: url("Images/bhole.gif");
+    background-size: cover;
+    padding: 10px 0 20px 0;
+    
+}
+
+#main-logo{
+        width: 200px;
+        padding-bottom:  0 0 200px 0;
+        
+}
+
+.applyBtn{
+    font-size: 20px;
+    padding: 6px 12px;
+    background-color: white;
+    color: inherit;
+    border: none;
+    font-family: inherit;   
+    background-color:#C8BCBC ;
+    /* margin-bottom: 20px; */
+    
+
+
+}
+
+.movie{
+    font-family: Corleone;
+    font-size: 100px;
+    margin-bottom: 140px;
+    text-shadow: -10px 10px red;
+    
+}
+
+.cta{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+#logo{
+    text-shadow: 5px 5px 4px rgb(0, 0, 0);
+}

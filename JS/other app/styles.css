@@ -1,0 +1,99 @@
+body {
+    background: linear-gradient(90deg, lightyellow, lightpink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Share Tech", sans-serif;;
+    box-sizing: border-box;
+   
+}
+
+#card-body {
+    /* border: 2px solid black; */
+    box-shadow: 0px 0px 4px black;
+    height: 250px;
+    width: 400px;
+    background:url(images/card_background.jpg);
+    object-fit: cover;
+    color: rgb(25, 6, 42);
+    padding: 10px 20p 10px 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px 0px 50px;
+        
+}
+
+#card-body-header {
+    font-weight: 600;
+    margin-bottom: 7px;
+    }
+
+#card-holder {
+    display: flex;
+    background-color: rgb(192, 190, 190);
+    box-shadow: 0px 0px 4px rgb(180, 174, 174);
+    
+
+}
+
+#card-holder-left {
+    width: 40%;
+    
+}
+
+
+#card-holder-left-topic {
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 23px;
+    color: rgb(11, 11, 34);
+    background:url(images/card_left_secn_bg.jpg);
+    height: 100%;
+    margin: 0;
+    padding: 10px 10px 10px 15px;    
+    text-align: right;
+
+    
+
+}
+
+#card-holder-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 10px;
+    color: black;
+    font-size: 12px;
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+#card-holder-right-module {
+    color: black;
+}
+
+#card-holder-right-completion {
+    margin: 0;
+    text-decoration: overline;
+    border-top: 1px solid rgb(74, 74, 74);
+    width: 100%;
+   
+
+}
+
+#footer {
+    text-align: center;
+    padding: 10px 0 0 0;
+    
+}
+
+.footer-btn {
+    background: transparent;
+    border: none;
+    margin: 0 20px;
+    cursor: pointer;
+}

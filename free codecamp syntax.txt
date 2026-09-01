@@ -94,3 +94,133 @@ margin top right bottom left
 
 
 use case text-decoration, text-underline-offset and  border-bottom
+
+background image and img    
+    bkground image are not added in html file but are added in css file
+
+css function url("")
+ 
+ background-size: ex cover
+
+font face
+    @font-face {
+        font-family:FOnt name which will be sued later;
+        src: url("file destination")
+    }
+
+html 5 ads made up of html and css usually in banner ads
+
+Span
+    spans are inline whereas divs are display block
+        usual named cta call to action
+
+        value used in  current example
+            text-decoration: underline;
+            text-underline-offset: 10px(distance of of udnerline from the text)
+            text-decoration: [line] [style] [color] [thickness];
+id (id and class)
+id is targetted in css not by dot(.) but instead targetted using #
+        example: <div id="container"></div>
+         in css
+            #container{
+
+            }
+
+    difference between id and classes
+
+    use id if your elemnt is unique and you will only use it once and whereas
+    class is menat to be used again and again , its meant for reusage
+
+jgp and webp
+    wbp are more compressed and use less data than gifs when 
+    they are sent from server to the client
+
+Choosing a color pallete foran image
+ex using coolor
+
+hero section
+
+text shadow
+     text-shadow: x offset y offset bluriness color;
+
+    html lang attribute
+        screenreaders use this lang
+        search engine also uses lang attribute to search content
+        date formats char set
+
+favicon.io
+coolors.in
+neetlify
+emojipedia.org
+
+
+Header recomended ordere
+    <meta charset> — always first. The browser needs to know the character encoding before it parses anything else, including the <title>.
+    <meta viewport> — if you have one (important for mobile).
+    <title>
+    Other <meta> tags — description, author, Open Graph tags, etc.
+    Preconnect / dns-prefetch hints — these should come early so the browser starts the connection ASAP.
+    Favicon
+    Stylesheets (external CSS, web fonts)
+    Scripts — usually at the end of <body> instead, but if in <head>, use defer.
+
+Object fit propert study again?
+object-positin
+    object-position: 20% 80%;      /* precise: 20% from left, 80% from top */
+
+overflow 
+
+css positioning
+
+recheck text shadow 0 0 ypx color
+
+ transform: rotate(45deg); 
+    Using Turns: You can use fractions of a circle instead of
+     degrees (e.g., transform: rotate(0.25turn); is equal to 90 
+     degrees)
+    
+pseudo element??
+
+42509
+
+justify items(main axis) align items(cross-axis)
+
+align items
+
+text align elements only centre inline elements
+
+you cant force hight and width for an inline element they 
+takes as much space as required for the content
+ nav element 9 navigation element
+    <nav></nav>
+
+
+how to select and move a block of code up and down
+ 
+ specificity - the more specific a css selector is the higher
+ it will be priortised
+
+ paragragh is block elemenet
+
+pseudo elements: hover
+
+gradients 
+    bacground- linea-gradient(direction(default bottom), color1, color 2)
+    typed of gradient
+css function url()
+
+
+viewports unit for screen percentage base sizes
+    Viewport Units (Recommended for Screen Percentages)Viewport
+     units calculate sizes directly from the browser window size,
+      completely independent of any parent elements.vw 
+      (Viewport Width): 1vw equals 1% of the total screen width.
+      vh (Viewport Height): 1vh equals 1% of the total screen 
+      height.css
+
+      The actual browser window size. vh and vw
+      whearas % is the width and height of parent div or parent
+      container
+
+      
+
