@@ -54,6 +54,47 @@ justify-content align-items &&&&&&77 justify-self  align-self
 
 align-content property 
 
+if else statement and use cases
+
+if(//true, expression will be evaluated to true/false and if its true
+if condition will execute){
+
+}
+else(false){
+
+}
+
+
+query selector is more dynamic method where u need to specify type
+
+document.querySelector("selector")
+
+functions
+
+array- list of items
+	array notation [] zero indexed
+	ordered lsits of items
+	
+	Arrays(composite data type or complex data types) with multiple data types
+
+.length property 
+
+operations on array
+	a method(a function on an object)
+	 called PUSH, adds elelment at the end of the array
+		syntax - array.push(item)
+
+
+		1. Remove by index — splice() (most common, modifies original array)
+		2. Remove by value — find index first, then splice
+		3. Remove the last element — pop()
+		4. Remove the first element — shift()
+		5. Filter out by condition — filter() (doesn't modify original, returns a new array)
+
+FOR LOOPS
+
 
 	
+object.method(what we are passing in the method)
+
 
