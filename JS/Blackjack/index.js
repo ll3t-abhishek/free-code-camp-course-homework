@@ -1,5 +1,5 @@
-let firstCard = 10;
-let secondCard = 3 ;
+let firstCard = getRandomCard();
+let secondCard = getRandomCard() ;
 let cards = [firstCard, secondCard];
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
@@ -26,33 +26,105 @@ function renderGame() {
         isAlive = false;
         
     }
-messageEl.textContent = message;
-sumEl.textContent = sum;
-cardsEL.textContent = cards;
+    messageEl.textContent = message;
+
+    sumEl.textContent = sum;
+
+    cardsEL.textContent = "";    
+
+    for (let i = 0; i < cards.length; i++){
+        cardsEL.textContent += cards[i] + " "};
+        
+    
 }  
 
 
 
 
 function newCard() {
-    let thirdCard = 14;
+    let thirdCard = getRandomCard();
+
     cards.push(thirdCard);
-    sumEl.textContent += thirdCard;
+    sum += cards[cards.length - 1];
+
+    sumEl.textContent = sum;
+
+    renderGame();
     
     // cardsEL.innerText = cards;
-    cardsEL.textContent = cards;
-    sum += thirdCard;
-    sumEl.textContent = sum; 
 
-    startGame();
+    // cardsEL.textContent = cards;
+    // sum += thirdCard;
+    
+
+    // startGame();
 
         
 
 }
 
+function getRandomCard() {
+
+
+}
+
+let sentance = ["Hello", "my", "name", "is", "Abhishek"];
+let greetingEl = document.getElementById("greeting-el");
+console.log(greetingEl);
+
+for (let i = 0; i < sentance.length;  i++){
+    greetingEl.textContent += sentance[i] + " " ;
+}
+
+// for (i=10; i <= 20; i++){
+//     console.log(i);
+
+// }
+
+// for(let count = 10; count <=100; count+=10){
+//     console.log(count);
+// }
+
+// let arrayR = ['1asas', '2sasas', '3vv', '4gg'];
+// for ( let i =0; i < arrayR.length; i++){
+//     console.log(arrayR[i])
+// }
+// {
+// let cards = [7,3,9]
+// for(let i = 0; i < cards.length; i++){
+//     console.log(cards[i]);
+// }
+
+// }
 // let describeYourelf = ["Abhishek", 28, true];
 // console.log(describeYourelf.length);
 // console.log(describeYourelf[2]);
 
 // describeYourelf.push(false);
 // console.log(describeYourelf);
+
+
+// let player1Time = 67;
+// let player2Time = 85;
+// function fastesTime() {
+//     if (player1Time < player2Time){
+//         return player1Time;
+//     }else if(player1Time > player2Time) {
+//         return player2Time;
+//     }else {
+//         return player1Time;
+// }
+
+// }
+
+// function getTotalRaceTime() {
+//     return player1Time + player2Time;
+// }
+
+
+// let totalRaceTime = getTotalRaceTime();
+// console.log(totalRaceTime);
+
+// let storedResult = fastesTime();
+
+// console.log(storedResult);

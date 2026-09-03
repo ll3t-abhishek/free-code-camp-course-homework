@@ -97,4 +97,13 @@ FOR LOOPS
 	
 object.method(what we are passing in the method)
 
+for lops, arrays and DOM
+
+**textContent is always a string,
+
+generate random numbers inside a function
+
+return keyword
+
+
 
