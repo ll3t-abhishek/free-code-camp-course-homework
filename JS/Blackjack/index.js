@@ -1,18 +1,50 @@
-let firstCard = getRandomCard();
-let secondCard = getRandomCard() ;
-let cards = [firstCard, secondCard];
-let sum = firstCard + secondCard;
-let hasBlackJack = false;
-let isAlive = true;
+let player = {
+    name:"",
+    chips:0 
+}
+
+let sum = 0;
+let cards = [];
+let hasBlackJack = false;   
+let isAlive = false;
 let message = "";
 let messageEl = document.getElementById("message-el");
 // let sumEl = document.getElementById("sum-el");
 let sumEl = document.querySelector("#sum-el");
-let cardsEL = document.querySelector("#cards-el")
+let cardsEL = document.querySelector("#cards-el");
+let playerEl = document.getElementById("player-el");
 
-function startGame() {
-    renderGame();
+
+player.name = "Per";
+player.chips = 145;
+playerEl.textContent = player.name + ": $" + player.chips;
+//Generates a random number/card//
+
+function getRandomCard() {
+    let randomNumber =Math.floor( Math.random() * 13 ) + 1;
+    if (randomNumber > 10){
+        return 10;
+    }else if(randomNumber === 1){
+        return 11;
+    }else{
+        return randomNumber;
+    }
+    
 }
+
+//Starts the game
+function startGame() {
+    isAlive = true;
+
+    let firstCard = getRandomCard();
+    let secondCard = getRandomCard();
+
+    cards=[firstCard, secondCard];
+    sum = firstCard + secondCard;
+    renderGame();
+
+  
+} 
 
 function renderGame() {
     if (sum <= 20){
@@ -36,46 +68,43 @@ function renderGame() {
         cardsEL.textContent += cards[i] + " "};
         
     
-}  
-
-
-
+} 
 
 function newCard() {
-    let thirdCard = getRandomCard();
+    if (isAlive === true && hasBlackJack === false){
+        let thirdCard = getRandomCard();
+        cards.push(thirdCard);
+        sum += cards[cards.length - 1];
 
-    cards.push(thirdCard);
-    sum += cards[cards.length - 1];
-
-    sumEl.textContent = sum;
-
-    renderGame();
+        renderGame();
+    }
     
-    // cardsEL.innerText = cards;
-
-    // cardsEL.textContent = cards;
-    // sum += thirdCard;
-    
-
-    // startGame();
-
-        
-
 }
 
-function getRandomCard() {
 
 
-}
+// let sentance = ["Hello", "my", "name", "is", "Abhishek"];
+// let greetingEl = document.getElementById("greeting-el");
+// // console.log(greetingEl);
 
-let sentance = ["Hello", "my", "name", "is", "Abhishek"];
-let greetingEl = document.getElementById("greeting-el");
-console.log(greetingEl);
+// for (let i = 0; i < sentance.length;  i++){
+//     greetingEl.textContent += sentance[i] + " " ;
+// }
 
-for (let i = 0; i < sentance.length;  i++){
-    greetingEl.textContent += sentance[i] + " " ;
-}
 
+
+
+// function rollDice(){
+//     let rNumber = Math.floor(Math.random() * 6 ) + 1;
+//     return rNumber;
+// }
+
+// console.log(rollDice());
+
+// rollDice();
+
+// let floorNumber = Math.floor(randomNumber);
+// console.log(floorNumber);
 // for (i=10; i <= 20; i++){
 //     console.log(i);
 
@@ -128,3 +157,29 @@ for (let i = 0; i < sentance.length;  i++){
 // let storedResult = fastesTime();
 
 // console.log(storedResult);
+
+
+// let course = {
+//     title: "Learn CSS grid for free",
+//     lessons: 16,
+//     creater: "Per",
+//     length: 63,
+//     level: 2,
+//     isFree: true,
+//     tags: ["html", "css"]
+// }
+// console.log(course.length);
+// console.log(course["length"]); //brackat notations;
+
+// let airbnbCastle = {
+//     title: "Live liek a king in my castle",
+//     price: 190,
+//     isSuperHost: true,
+//     images: ["img/castle1.png","img/castle2.png"],
+//     location: "europe",
+//     ac: true,
+//     rooms: ["4 geustRooms", "2 washrooms", "1 bar"]
+// }
+
+// console.log(airbnbCastle.price);
+// console.log(airbnbCastle.rooms);

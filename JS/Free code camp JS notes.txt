@@ -105,5 +105,21 @@ generate random numbers inside a function
 
 return keyword
 
+function can be declared anywhere, it gets hoisted at the top
 
+Math object
 
+logical operators
+	and
+	or
+
+object
+
+let objectName = {
+	key: value,
+	key: value
+}
+
+	.notations and bracket notations
+
+MEthods on Object
