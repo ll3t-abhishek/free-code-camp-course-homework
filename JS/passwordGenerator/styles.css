@@ -1,0 +1,52 @@
+body {
+   
+    background-color: bisque;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.appHolder {
+    height: 350px;
+    width: 300px;
+    background-color: rgba(0, 0, 77, 0.777);
+    margin: 40px auto;
+    border: 8px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 50px 50px 0 40px;
+
+    
+}
+
+.highlight {
+    color: greenyellow;
+}
+
+.lowlight {
+    color: rgb(204, 200, 200);
+}
+
+#button-el {
+    background-color: green;
+    color: white;
+    padding: 4px 10px;
+    border: none;
+    line-height: 25px;
+    border-radius: 4px;
+    margin: 0 0 20px 0;
+}
+
+#generated-password {
+    border-top: 2px solid gray ;
+    display: flex;
+    justify-content:space-between ;
+    color: rgba(0, 193, 0, 0.722);
+    text-align: center;
+    padding: 25px 0 0 0;
+    
+}
+
+#generated-pwd1, #generated-pwd2{
+    background-color: rgb(6, 0, 47);
+    line-height: 30px;
+    width: 45%;
+}
