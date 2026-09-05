@@ -123,3 +123,50 @@ let objectName = {
 	.notations and bracket notations
 
 MEthods on Object
+
+empty or void tags self closing tags
+
+box-sizing ; border-box
+
+	addEventListiner("event, what kind of event", function)
+
+DOM
+
+const
+	if possible use const ; if not then use let
+
+Acess user input inside a inout bar
+	searchTxt.value 
+	document.getElementById('textbox_id').value 
+	document.getElementsByClassName('class_name')[whole_number].value
+	document.getElementsByTagName('tag_name')[whole_number].value 
+	document.getElementsByName('name')[whole_number].value
+	document.getElementsByName("searchTxt")[0].value;	
+	document.querySelector('selector').value
+	document.querySelectorAll('selector')[whole_number].value
+
+Add %0D%0A to any place you want to encode a line break on the URL.
+
+whitespace css property
+
+how to write list items inside list
+
+document.createElement
+
+	append child to a list
+	 let li = document.createElement("li");
+        li.textContent = inputEl.value;
+        ulEL.appendChild(li);
+
+
+document.innerHtml
+
+event listener typo gave no error
+
+DOM manipulation comes with the const
+	so manipulating less is better
+
+focus()
+
+template strings
+
