@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 1280px;
+}
+
+.left-section {
+    width: 30%;
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+.right-section {
+    width: 70%;
+    height: 100%;
+    background-color: rgb(34, 255, 0);
+    padding: 10px 20px;
+    box-sizing: inherit;
+}
+
+#input-el {
+    width: 100%;
+    height: 20%;
+    text-align: start;
+    margin: 0;
+
+
+}

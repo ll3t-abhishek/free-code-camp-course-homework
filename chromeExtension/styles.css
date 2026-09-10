@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    min-width: 400px;
 }
 
 /* #5f9341 */
@@ -15,7 +16,7 @@ input {
 
 }
 
-button {
+#input-btn {
     background-color: #5f9341;
     color: white;
     padding: 8px 10px;
@@ -23,6 +24,31 @@ button {
     font-weight: bold;
 }
 
-#leads {
+#delete-btn, #tab-btn {
+    color:#5f9341 ;
+    background-color: white;
+    border: 2px solid #5f9341;
+    padding: 7px 10px;
+    font-weight: bold;
+}
+
+/* #leads {
     white-space: pre-line;
+} */
+
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 20px 0 0 0;
+}
+
+li {
+    margin: 5px 0 0 0;
+    
+
+}
+
+li a {
+    color: #5f9341 ;
+    
 }

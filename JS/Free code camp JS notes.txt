@@ -169,4 +169,41 @@ DOM manipulation comes with the const
 focus()
 
 template strings
+	can break them into multiple listeners
 
+NUmber function and Typeof
+
+	anonymous function (it has no name)
+
+		e.preventDefault();
+			This tells the browser: "Don't do your default submit behavior
+			 (page reload/navigation) — I'm handling this myself with my own
+			  JavaScript instead."
+
+That's called a descendant selector (also sometimes referred to as a 
+combinator selector, specifically using the descendant combinator).
+
+json- javascript object notation
+
+localStorage  	BOTH KEY VALUES MUST BE STRING (ITS A VERY PRIMITIVE DATABSE)
+	localStorage.setItem("key", "value")
+	localStorage.getITem("key")
+	localStorage.clear()
+
+	storing arrays in localStorage
+				JSON.stringify() converts array to string
+				JSON.parse conversts string to array
+
+				JSON object {} will turn into javascript object and vversa
+				console.log(typeof myArrayNew); // should print: "object" (arrays are typeof "object" in JS)
+
+
+
+function parameters and how they can improve app(in procject case)
+	low degree usabiltiy?
+	arguments in functions - prac
+
+	functions with multiple parameters 
+
+Aside arguments vs parameters
+	arrays as a parameters
