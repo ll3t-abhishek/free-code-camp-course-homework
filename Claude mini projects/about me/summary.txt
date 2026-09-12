@@ -8,3 +8,28 @@ a job for a CSS property you already learned (text-transform), not typing in cap
   box-sizing: border-box;
 }
 
+minmax() — giving a column a flexible range
+
+Normally when you set a column width, it's one fixed value. minmax() gives it a range instead: "never smaller than X, never bigger than Y."
+    grid-template-columns: minmax(150px, 1fr);
+
+
+auto-fit / auto-fill — letting the browser decide how many columns fit
+
+Instead of manually saying "3 columns," you say "as many columns as comfortably fit," and let the browser calculate it based on screen width.
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    
+grid-column: span 2 / grid-row: span 2 — making one item bigger than the rest
+
+By default every item takes up exactly one cell. span lets a specific item claim extra cells.
+      .featured {
+  grid-column: span 2;
+}
+
+
+
+minmax(150px, 1fr) defines the range for a single column: never smaller than 150px, but grow up to a fair share (1fr) of leftover space.
+repeat(auto-fit, ...) says "keep repeating that column pattern as many times as will fit" — the browser does the math of how many 150px+ columns can squeeze into the current width.
+
+
+****in JavaScript, multiple arguments must always be separated by a comma

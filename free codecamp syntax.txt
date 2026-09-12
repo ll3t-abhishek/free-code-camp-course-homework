@@ -1,14 +1,65 @@
 <h1></h1>biggest tag usually for heading
+
 <h2></h2>2nd biggest
+
 <h3></h3>and so on
+
 <p></p> paragraphs
+
 <img> iamge tag no need to close this tag, self closing tag
-    <img src=""> src is a attribute named source which specifies the location can be on local
+    <img src="" alt="describe image for better SEO(Search engine optimisatiob)"> src is a attribute named source which specifies the location can be on local
+		alt is alternativwe text it loads when a picture fails to laod
+		alt is required for good practice: This is the "alternative text" — a written description of the image. It's used when:
+		The image fails to load (shows this text instead)
+		Screen readers read it aloud for visually impaired users
+		
+Search engines use it to understand what the image is about (SEO again!)
     system or can be burrowed from online url. can use other ttribute like width = "100%"
+	
+			paragraph max width css property
+box-sizing: border-box (this makes padding content and border to be contained inside the size
+			
 <div> divider or container
 <a> anchor tag used to create links
+	When using target="_blank", it's good practice to also add rel="noopener noreferrer" for security reasons:
+	You can wrap more than just text: An <a> tag can wrap around images, <div>s, or entire cards, making the whole block clickable:
+		<a href="https://example.com" target="_blank" rel="noopener noreferrer">Link</a>
+		noopener: Prevents the new page from accessing window.opener — it can't manipulate or redirect your original tab at all. This is the one that actually stops tabnabbing.
+		noreferrer: Also blocks the Referer header from being sent (which normally tells the destination site "this visitor came from yourexample.com"). This is more about privacy than security, but commonly paired with noopener.
+		Modern browsers auto-protect you (mostly)
+	
     src set?? renders different size of images on different types of screen
+	srcset="cat-400w.jpg 400w, cat-800w.jpg 800w, cat-1200w.jpg 1200w"
+	Each entry is: filename + a space + a width descriptor (400w means "this image is 400 pixels wide")
+	example
+	<img 
+	  src="cat-800w.jpg"
+	  srcset="cat-400w.jpg 400w, cat-800w.jpg 800w, cat-1200w.jpg 1200w"
+	  sizes="(max-width: 600px) 100vw, 50vw"
+	  alt="A fluffy orange cat"
+	>
+	This sizes value says: "if the screen is 600px or narrower, the image will take up 100% of the viewport width; otherwise, it'll take up 50% of the viewport width." The browser uses this info + srcset to calculate the ideal file to download.
+
 <button></button>
+	<a> vs <button> — knowing which to use: This trips up a lot of beginners.
+	Use <a> when the user is navigating somewhere (a new page, a section, a file).
+	Use <button> when the user is triggering an action (submitting a form, opening a modal, toggling something, running JavaScript).
+	
+	<button type="button">Just a button, does nothing on its own</button>
+	<button type="submit">Submits the form</button>
+	<button type="reset">Clears the form fields</button>
+	It can contain more than just text — images, icons, etc:
+		<button>
+		  <img src="icon.svg" alt=""> Save Changes
+		</button>
+		
+			
+	Inside a <form>, if you don't specify type, it defaults to type="submit"
+
+<form> STUDY AFTER RIVISION (UNTUCHED SO FAR)
+
+
+
 <input type="" placeholder=""> self closing tag, type attribute to define what kind of input tag one wants
     example, 
     text
@@ -16,21 +67,31 @@
     date
     time
     color
+<input> STUDY VARIOUS INPUT TYPES
+	
+<select>/<option> (dropdowns) 	
+
 <link rel="stylesheet"  href="Stylesheet.css"> self closing tag, hypertext reference
 <a href="link">text that will be used to click on link</a>
     target attribute can change if it opens in existing tabs or new tabs
     example <a href="file location" target="_blank">text that will be used to press link </a>
-    anchor tegs can be nested inside of other tags
-inline in a text block??
-metadata??
+    anchor tags can be nested inside of other tags
+inline in a text block
+
+metadata hold information of site for browsers and SEO
 
 Lists uses 2 different tags 
+
     one to wrap entire list 
         <ol> 
             <li></li> short for list items
         </ol> short for ordered list
         <ul> </ul> used for unordered list
     other tag for each list item
+	
+	Lists
+		<ul>/<ol> are block-level containers, and each <li> inside is also block-level (stacks vertically, one per line by default).
+		You can nest lists — a list inside a list item, useful for sub-categories:
 
 Deployment
 
@@ -39,6 +100,12 @@ CSSS
 selector {
              property: value;
 }
+	Descendant selector
+	Selector priority (specificity)
+	If multiple rules target the same element, CSS decides which one "wins" based on specificity: Inline style > ID (#) > Class (.) > Element (tag)
+	
+	
+	
 example of properties
 color
 background-color
@@ -47,8 +114,16 @@ font-weight
 font-size
 text-align
 display block inline inline block
+letter-spacing
 
-margin auto??
+max-width: 100%;     /* never exceed this, great for responsive images */
+min-height: 100vh;   /* vh = % of viewport height, "vh=100" means full screen height */
+  
+  
+  
+ CSS POSITION
+background-size, background-position, background-repeat
+margin
 collapsing margins
 
 centering elements with margins
@@ -62,7 +137,7 @@ box model
 height for input field  (padding with line height)
 line height vs height for input field
 buttons are display inline block
-        misc text-align??
+        misc text-align
 box -shadow property
 
 
@@ -80,6 +155,7 @@ make image smaller
 
 utitlty class, applying a utility class
 
+--------------
 
 css inheritance
 DRYer code(dont repeat yourself)
@@ -227,3 +303,17 @@ viewports unit for screen percentage base sizes
 <textarea></textarea>
 
 revise object
+
+
+Other common SEO factors (just so you have context, not to overwhelm you):
+
+Page load speed
+Mobile-friendliness
+Quality and relevance of content
+Other reputable sites linking to yours
+Descriptive URLs and image alt text.
+
+<nav>
+	The <nav> tag defines a section of navigation links — like a menu that helps users move around your site.
+	it can have id to jump from 1 part of the webiste to other part or it can be used to navigate form 1 page of webpage
+	to another like from home to refrence etc
