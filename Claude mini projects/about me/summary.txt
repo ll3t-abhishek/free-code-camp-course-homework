@@ -1,0 +1,10 @@
+Small content note (not a code bug): "PROJECTS I HAVE CREATED:" written in all-caps 
+directly in your HTML is a minor bad habit — if you want it visually uppercase, that's 
+a job for a CSS property you already learned (text-transform), not typing in caps directly. Typing it in caps in the HTML also means screen readers may read it as an acronym, spelling out each letter.
+
+
+. If you want every element on the page to use border-box, the standard trick is:
+  * {
+  box-sizing: border-box;
+}
+

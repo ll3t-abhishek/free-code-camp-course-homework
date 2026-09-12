@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+  background: linear-gradient(lightyellow, rgb(74, 173, 84) );
+}
+
+.header-navigationMenu {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid black;
+  padding: 10px 1px;
+  background-color: rgba(160, 7, 50, 0.474);
+}
+
+.header-navigationMenu-buttons {
+  background-color: rgb(86, 88, 88);
+  color: white;
+  width: 150px;
+  text-decoration: none;
+  line-height: 40px;
+}
+
+.header-navigationMenu-buttons:hover {
+  background-color: rgb(167, 171, 171);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+h1 {
+  color: rgb(45, 1, 85);
+}
+
+#pfp {
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin:auto;
+    
+}
+
+#projects-description {
+  text-transform: capitalize;
+}
+
+.contact-input {
+  margin: 0 0 10px 0;
+  width: 500px;
+}
+
+#email-el, #name-el {
+  width: 400px;
+}
+#message-el {
+  height: 100px;
+  width: 400px;
+}
+
+.contact-submitButton {
+  width: 60px;
+  margin: 10px auto;
+
+  
+}
+ol, ul {
+  list-style-position: inside;
+}
