@@ -214,4 +214,12 @@ Intro to clean code
 
 
 
-totalPrice.toFixed(2);
+totalPrice.   toFixed(2);
+
+inputValue.forEach(item => {
+    item.textContent = value;
+  });
+
+
+Nodelist
+
