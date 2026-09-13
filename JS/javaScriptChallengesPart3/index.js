@@ -62,5 +62,30 @@
 // const sentance = f1("largest countries", ["China", "India", "USA"]); 
 // console.log(sentance);
 
+//-----------------------------------------------------------
 
+// const imgs = [
+//     "images/images 1.jpg",
+//     "images/images 2.jpg",
+//     "images/images 3.jpg"
+// ]
 
+// console.log(imgs[0]);
+// const imageEL= document.getElementById("image-el");
+
+// function renderImage() {
+//   let renderedImage = "";
+//   for(let i = 0; i < imgs.length; i++) {
+//     renderedImage += `<img alt ="Employees in the company" class="team-img" src="${imgs[i]}">`;
+//   }
+//   imageEL.innerHTML = renderedImage;
+// }
+// renderImage();
+
+//-----------------------------------------------------------
+
+const totalPrice= "723.89138716831";
+const roundedNumber = Number(totalPrice).toFixed(2);
+const btn = document.getElementById("purchase-btn");
+btn.textContent = `Buy $${roundedNumber}`
+console.log(typeof totalPrice);

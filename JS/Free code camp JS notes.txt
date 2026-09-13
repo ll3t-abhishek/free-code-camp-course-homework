@@ -211,3 +211,7 @@ Aside arguments vs parameters
 LEArn CSS ANimations
 UI design fundamentals
 Intro to clean code
+
+
+
+totalPrice.toFixed(2);
