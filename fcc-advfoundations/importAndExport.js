@@ -1,0 +1,1 @@
+export const abcVariable = 4578;

@@ -200,11 +200,39 @@
 
 // setTimeout(logAnswer, 3000, "Lima", 10);
 
-const start = performance.now();
+// const start = performance.now();
 
-setTimeout (() => {
-  const end = performance.now();
-  console.log(`Execution Time :${end - start}`);
-}, 2000);
+// setTimeout (() => {
+//   const end = performance.now();
+//   console.log(`Execution Time :${end - start}`);
+// }, 2000);
+
+// import { abcVariable } from "./importAndExport.js";
+
+// console.log(abcVariable);
+
+// class cars {
+//   constructor(name, model, topSpeed){
+//     this.name = name;
+//     this.model = model;
+//     this.topSpeed = topSpeed;
+//   }
+// }
+
+// const cars1 = new cars("maruti", "lodu", 50);
+// console.log(cars1);
+
+// const date = new Date();
+// const year = date.getFullYear();
+const year = new Date().getFullYear();
+console.log(year);
 
 
+class stocks{
+  constructor(name, sym, price, time){
+    this.name =name;
+    this.sym = sym;
+    this.price= price;
+    this.time = time;
+  }
+}
